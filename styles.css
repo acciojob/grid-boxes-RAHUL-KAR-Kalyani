@@ -1,54 +1,22 @@
 /*  your css code here. If applicable */
 #grid{
 	display: grid;
-	grid-template-columns: repeat(4, 1fr) 0;
-	grid-template-rows: repeat(5, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+	grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+	grid-template-rows: 124px 124px 124px 124px 124px;
+	grid-gap: 10px 10px;
 }
 #grid>div{
-	margin:3px;
-	padding:10px;	
-	color:white;
-}
-.div1 { 
-	grid-area: 1 / 1 / 2 / 5;
-	height:50px;
 	background-color:green;
 }
-.div2 { 
-	grid-area: 2 / 1 / 6 / 2;
-	background-color:green;
+div:nth-child(1){
+	grid-column:span 4 / auto;
 }
-.div3 { 
-	grid-area: 2 / 2 / 3 / 3;
-	background-color:green;
+div:nth-child(2){
+	grid-row:span 4 / auto;
 }
-.div4 { 
-	grid-area: 2 / 3 / 3 / 5;
-	background-color:green;
-	  }
-.div5 { 
-	grid-area: 3 / 2 / 4 / 4;
-	background-color:green;
-	  }
-.div6 { 
-	grid-area: 3 / 4 / 4 / 5;
-	background-color:green;
-	  }
-.div7 { 
-	grid-area: 4 / 2 / 5 / 3;
-	background-color:green;
-	  }
-.div8 { 
-	grid-area: 4 / 3 / 5 / 4;
-	background-color:green;
-	  }
-.div9 { 
-	grid-area: 4 / 4 / 5 / 5;
-	background-color:green;
-	  }
-.div10 { 
-	grid-area: 5 / 2 / 6 / 5;
-	background-color:green;
-	   }
+div:nth-child(4),div:nth-child(5){
+	grid-column:span 2 / auto;
+}
+div:nth-child(10){
+	grid-column:span 3 / auto;
+}
